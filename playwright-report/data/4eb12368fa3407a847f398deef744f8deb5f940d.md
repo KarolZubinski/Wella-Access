@@ -1,0 +1,171 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - paragraph: PROFESSIONALS EXCLUSIVE
+  - list:
+    - listitem:
+      - link "Find a salon":
+        - /url: https://www.wella.com/professional/en-EN/salon-finder
+    - listitem:
+      - link "subscribe":
+        - /url: https://www.wella.com/professional/en-EN/subscribe
+    - listitem:
+      - link "instagram":
+        - /url: http://instagram.com/WellaHair
+      - link "facebook":
+        - /url: http://www.facebook.com/wellainternational
+      - link "youtube":
+        - /url: https://www.youtube.com/subscription_center?add_user=wellatrendvision
+      - link "pinterest":
+        - /url: http://www.pinterest.com/wellapro/
+      - link "twitter":
+        - /url: http://twitter.com/WellaPro
+    - paragraph: CHANGE COUNTRY
+  - list:
+    - listitem:
+      - text: Search x
+      - textbox "Write and press enter"
+    - listitem: "|"
+    - listitem:
+      - link "Wella Store":
+        - /url: https://www.professionalstore.com/countryselector/
+  - link "WELLA HOME":
+    - /url: https://www.wella.com/professional/en-EN/home
+    - img "WELLA HOME"
+  - list:
+    - listitem:
+      - link "PROFESSIONAL STORE":
+        - /url: https://www.professionalstore.com/countryselector/
+        - paragraph: PROFESSIONAL STORE
+    - listitem:
+      - link "Hair Color":
+        - /url: ""
+        - paragraph: Hair Color
+    - listitem:
+      - link "Hair Care":
+        - /url: ""
+        - paragraph: Hair Care
+    - listitem:
+      - link "Hair Styling & Perm":
+        - /url: ""
+        - paragraph: Hair Styling & Perm
+    - listitem:
+      - link "Looks & Trends":
+        - /url: ""
+        - paragraph: Looks & Trends
+    - listitem:
+      - link "About Wella":
+        - /url: ""
+        - paragraph: About Wella
+    - listitem:
+      - link "Wella Blog":
+        - /url: ""
+        - paragraph: Wella Blog
+- img "Banner showing a collage of hairstyles from the Victoria Beckham show at Paris Fashion Week."
+- button "Previous"
+- link "Banner showing a collage of hairstyles from the Victoria Beckham show at Paris Fashion Week.":
+  - /url: /professional/en-EN/wella-x-victoria-beckham-aw25
+  - img "Banner showing a collage of hairstyles from the Victoria Beckham show at Paris Fashion Week."
+- button "Next"
+- list:
+  - listitem:
+    - button "1"
+  - listitem:
+    - button "2"
+  - listitem:
+    - button "3"
+  - listitem:
+    - button "4"
+  - listitem:
+    - button "5"
+  - listitem:
+    - button "6"
+  - listitem:
+    - button "7"
+- link "DISCOVER MORE ULTIMATE REPAIR NIGHT SERUM":
+  - /url: /professional/en-EN/hair-care/ultimate-repair/night-serum
+  - heading "DISCOVER MORE ULTIMATE REPAIR NIGHT SERUM" [level=2]
+- link "DISCOVER MORE GOLDEN HOUR GLOW":
+  - /url: /professional/en-EN/results/golden-hour-glow
+  - heading "DISCOVER MORE GOLDEN HOUR GLOW" [level=2]
+- link "DISCOVER MORE Level up your hair care routine":
+  - /url: /professional/en-EN/results/hair-care-results
+  - heading "DISCOVER MORE Level up your hair care routine" [level=2]
+- link "DISCOVER MORE FUSION - INTENSE HAIR REPAIR":
+  - /url: /professional/en-EN/hair-care/fusion
+  - heading "DISCOVER MORE FUSION - INTENSE HAIR REPAIR" [level=2]
+- 'link "DISCOVER MORE Signature Naturals: Shinefinity"':
+  - /url: /professional/en-EN/hair-color/shinefinity/shinefinitycolorglaze
+  - 'heading "DISCOVER MORE Signature Naturals: Shinefinity" [level=2]'
+- link "DISCOVER MORE KOLESTON PERFECT ME+ IS VEGAN!":
+  - /url: /professional/en-EN/hair-color/koleston-perfect
+  - heading "DISCOVER MORE KOLESTON PERFECT ME+ IS VEGAN!" [level=2]
+- link "READ MORE WELLA BLONDOR BLONDE HAIR COLOR FORMULAS":
+  - /url: https://blog.wella.com/us/blondor-blonde-hair
+  - heading "READ MORE WELLA BLONDOR BLONDE HAIR COLOR FORMULAS" [level=2]
+- link "READ MORE 12 TIPS ON HOW TO CARE FOR COLORED HAIR":
+  - /url: https://blog.wella.com/us/how-to-care-for-colored-hair
+  - heading "READ MORE 12 TIPS ON HOW TO CARE FOR COLORED HAIR" [level=2]
+- contentinfo:
+  - heading "WELLA WORLD" [level=2]
+  - list:
+    - listitem:
+      - link "CONTACT US":
+        - /url: https://www.wella.com/professional/en-EN/contact-us
+    - listitem:
+      - link "SUBSCRIBE":
+        - /url: https://www.wella.com/professional/en-EN/subscribe
+    - listitem:
+      - link "EXPLORE WELLA CAREERS":
+        - /url: https://www.wellacareers.com/
+  - heading "OTHER WELLA COMPANY BRANDS" [level=2]
+  - list:
+    - listitem:
+      - link "Wella Company":
+        - /url: https://www.wellacompany.com/our-brands
+  - heading "FOLLOW US" [level=2]
+  - list:
+    - listitem:
+      - link "instagram":
+        - /url: http://instagram.com/WellaHair
+    - listitem:
+      - link "facebook":
+        - /url: http://www.facebook.com/wellainternational
+    - listitem:
+      - link "youtube":
+        - /url: https://www.youtube.com/subscription_center?add_user=wellatrendvision
+    - listitem:
+      - link "pinterest":
+        - /url: http://www.pinterest.com/wellapro/
+    - listitem:
+      - link "twitter":
+        - /url: http://twitter.com/WellaPro
+- list:
+  - listitem:
+    - link "SITEMAP":
+      - /url: https://www.wella.com/professional/en-EN/sitemap
+  - listitem:
+    - link "TERMS & CONDITIONS":
+      - /url: https://www.wellacompany.com/terms-and-conditions
+  - listitem:
+    - link "ABOUT COOKIES":
+      - /url: https://www.wellacompany.com/cookie-policy
+  - listitem:
+    - link "PRIVACY NOTICE":
+      - /url: https://www.wellacompany.com/privacy-policy
+  - listitem: Cookies Settings
+  - listitem:
+    - link "COMPLIANCE":
+      - /url: https://www.wellacompany.com/about-us
+- text: COPYRIGHT 2025, Wella Operations US LLC, ALL TRADEMARKS REGISTERED. ALL RIGHTS RESERVED.
+- region "Cookie banner":
+  - dialog "Privacy":
+    - text: Our website uses cookies to give you a better user experience. By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts, and for ads personalisation. Please remember that if you turn cookies off, certain features of this website may not be available to you.
+    - link "More information about your privacy, opens in a new tab":
+      - /url: https://www.wellacompany.com/cookie-policy
+      - text: Find out more about our cookies here.
+    - button "Cookies Settings"
+    - button "Reject All"
+    - button "Accept All Cookies"
+```
