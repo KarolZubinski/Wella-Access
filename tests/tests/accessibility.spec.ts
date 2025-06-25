@@ -39,7 +39,7 @@ test('a11y report with screenshot + HTML dump', async ({ page }, testInfo) => {
     }
   }
 
-  // Dodaj załączniki do raportu Playwright (widoczne w `npx playwright show-report`)
+  // Dodaj załączniki do raportu Playwright
   testInfo.attach('a11y-report', { path: htmlReportPath, contentType: 'text/html' });
   testInfo.attach('screenshot', { path: screenshotPath, contentType: 'image/png' });
   testInfo.attach('page-html', { path: htmlDumpPath, contentType: 'text/html' });
