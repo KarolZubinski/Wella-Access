@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
-test.only('should not have any automatically detectable WCAG A or AA violations', async ({ page }) => {
+test('should not have any automatically detectable WCAG A or AA violations', async ({ page }) => {
   await page.goto('https://www.wella.com/professional/en-EN');
 //   await page.goto('https://bbc.co.uk/');
 
