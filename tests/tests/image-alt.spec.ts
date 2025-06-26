@@ -1,28 +1,25 @@
 import { test, expect } from '@playwright/test';
-import AxeBuilder from '@axe-core/playwright';
 
-test.describe('Test obrazków bez alt', () => {
-  test.only('Wszystkie <img> mają atrybut alt', async ({ page }) => {
-    await page.goto('https://www.wella.com/professional/en-EN'); // <- Zmień na własną stronę
+test.describe('Każdy <img> musi mieć alt z treścią (nie pusty)', () => {
+  test('Sprawdza brak lub pusty alt', async ({ page }) => {
+    await page.goto('https://www.wella.com/professional/en-EN/home'); // <- podmień na swoją stronę
 
-    const results = await new AxeBuilder({ page })
-      .include('body') // testujemy tylko body strony
-      .withTags(['wcag2a', 'wcag2aa'])
-      .analyze();
+    const imagesWithoutAltText = await page.$$eval('img', imgs =>
+      imgs.filter(img =>
+        !img.hasAttribute('alt') ||
+        img.getAttribute('alt') === null ||
+        img.getAttribute('alt')?.trim().length === 0
+      )
+      .map(img => img.outerHTML)
+    );
 
-    const altViolations = results.violations.filter(v => v.id === 'image-alt');
-
-    if (altViolations.length > 0) {
-      console.log('\n🛑 Znaleziono obrazki bez atrybutu alt:');
-      altViolations.forEach(v => {
-        v.nodes.forEach(node => {
-          console.log(`➡️  ${node.html}`);
-        });
-      });
+    if (imagesWithoutAltText.length > 0) {
+      console.log('\n🛑 Obrazki bez alt lub z pustym alt:');
+      imagesWithoutAltText.forEach(html => console.log(`➡️  ${html}`));
     } else {
-      console.log('✅ Wszystkie obrazki mają atrybut alt.');
+      console.log('✅ Wszystkie obrazki mają niepusty alt.');
     }
 
-    expect(altViolations.length).toBe(0);
+    expect(imagesWithoutAltText.length).toBe(0);
   });
 });
