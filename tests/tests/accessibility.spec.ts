@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import { createHtmlReport } from 'axe-html-reporter';
 
-test('a11y report with screenshot + HTML dump', async ({ page }, testInfo) => {
+test.only('a11y report with screenshot + HTML dump', async ({ page }, testInfo) => {
   await page.goto('https://www.wella.com/professional/en-EN');
 
   const results = await new AxeBuilder({ page }).analyze();
