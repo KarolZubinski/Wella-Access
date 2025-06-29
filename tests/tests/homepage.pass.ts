@@ -25,7 +25,6 @@ createHtmlReport({
   options: {
     outputDir: reportDir,
     reportFileName: 'report.html',
-    reportTitle: 'Playwright Accessibility Report',
   },
 });
 

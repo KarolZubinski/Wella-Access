@@ -1,3 +1,4 @@
 .vscode/
 axe-reports/
 playwright-report/
+node_modules/
