@@ -1,9 +1,10 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import { homePageUrl } from '../../../config/pagesUrl';
 
 test.describe('Test obrazków bez alt', () => {
-  test.only('Wszystkie <img> mają atrybut alt', async ({ page }) => {
-    await page.goto('https://www.wella.com/professional/en-EN/home');
+  test('Wszystkie <img> mają atrybut alt', async ({ page }) => {
+    await page.goto(homePageUrl);
 
     const results = await new AxeBuilder({ page })
       .include('body') // testujemy tylko body strony

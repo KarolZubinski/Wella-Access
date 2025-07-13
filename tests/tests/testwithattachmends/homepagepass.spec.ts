@@ -3,9 +3,10 @@ import AxeBuilder from '@axe-core/playwright';
 import fs from 'fs';
 import path from 'path';
 import { createHtmlReport } from 'axe-html-reporter';
+import { homePageUrl } from '../../../config/pagesUrl';
 
-test('a11y report with screenshot + HTML dump', async ({ page }, testInfo) => {
-  await page.goto('https://www.wella.com/professional/en-EN');
+test.only('a11y report with screenshot + HTML dump', async ({ page }, testInfo) => {
+  await page.goto(homePageUrl);
 
     // Kliknij baner cookies (jeśli widoczny)
   const cookieAcceptBtn = page.locator('#onetrust-accept-btn-handler');
