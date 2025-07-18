@@ -3,4 +3,5 @@ axe-reports/
 playwright-report/
 node_modules/
 test-results/
-package-lock.json/
+package-lock.json
+axe-report.html

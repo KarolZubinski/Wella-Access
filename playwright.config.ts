@@ -1,10 +1,10 @@
-import { defineConfig } from '@playwright/test';
+import { defineConfig } from "@playwright/test";
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: "./tests",
   use: {
-    browserName: 'chromium',
+    browserName: "chromium",
     headless: true,
   },
-  reporter: [['html', { open: 'on-failure' }]], // ← dodane
+  reporter: [["html", { open: "on-failure" }]], // ← dodane
 });

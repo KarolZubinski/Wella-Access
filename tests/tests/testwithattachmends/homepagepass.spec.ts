@@ -63,7 +63,7 @@ test.only("a11y report with screenshot + HTML dump", async ({
   // Ostrzeżenie, jeśli są błędy
   if (results.violations.length > 0) {
     console.warn(
-      `🔎 Found ${results.violations.length} accessibility issues. See HTML report for details.`
+      `🔎 Found ${results.violations.length} accessibility issues. See HTML report for details.`,
     );
   }
   // expect(results.violations.length).toBe(0);

@@ -12,7 +12,7 @@ test.describe("Test obrazków bez alt", () => {
       .analyze();
 
     const altViolations = results.violations.filter(
-      (v) => v.id === "image-alt"
+      (v) => v.id === "image-alt",
     );
 
     if (altViolations.length > 0) {
