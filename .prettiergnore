@@ -1,0 +1,6 @@
+pack.vscode/
+axe-reports/
+playwright-report/
+node_modules/
+test-results/
+package-lock.json/
